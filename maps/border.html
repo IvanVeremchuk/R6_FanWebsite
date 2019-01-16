@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Map:Border</title>
+		<link rel="stylesheet" type="text/css" href="maps.css" />
+    </head>
+    <body>
+    	<div class="img-zoom-container">
+  			<div id="myresult" class="img-zoom-result"></div>
+		    <img id="myimage" src="border/border1.png" alt="border 1-st flor" style="height:400px;border:0;"/>
+		</div>
+		<div class="img-magnifier-container">
+		    <img id="myimage2" img src="border/border2.png" alt="border second flor" style="height:400px;border:0;"/>
+		</div>
+		<div class="img-magnifier-container">
+			<img id="myimage3" img src="border/border3.png" alt="border third flor" style="height:400px;border:0;"/>
+		</div>
+		<script>
+			imageZoom("myimage", "myresult");
+			magnify("myimage2", 3);
+			magnify("myimage3", 3);
+		</script>
+    </body>
+</html>
