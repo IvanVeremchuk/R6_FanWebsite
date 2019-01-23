@@ -1,10 +1,30 @@
 <html>
     <head>
-        <title>Map:Kanal</title>
+        <title>Map:Villa</title>
+        <link rel="stylesheet" type="text/css" href="style1.css" />
+		<script src="script.js"></script>
     </head>
     <body>
-        <img src="villa/villa1.png" alt="villa basement" style="height:500px;border:0;"/>
-        <img src="villa/villa2.png" alt="villa first flor" style="height:500px;border:0;"/>
-        <img src="villa/villa3.png" alt="villa second flor" style="height:500px;border:0;"/>
-    </body>
+        <div class="row">
+            <div class="column">
+                <img src="villa/villa1.png" alt="villa 1-st flor"  onclick="myFunction(this);"/>
+            </div>
+            <div class="column">
+                <img src="villa/villa2.png" alt="villa second flor"  onclick="myFunction(this);"/>
+            </div>
+            <div class="column">
+                <img src="villa/villa3.png" alt="villa third flor"  onclick="myFunction(this);"/>
+            </div>
+        </div>
+        <div class="container" style="height: 50%">
+            <!-- Close the image -->
+            <span onclick="this.parentElement.style.display='none'" class="closebtn" style="width: 41%">&times;</span>
+
+            <!-- Expanded image -->
+            <img id="expandedImg"  style="width: 60%">
+
+            <!-- Image text -->
+            <div id="imgtext"  style="height: 83%"></div>
+        </div>
+</body>
 </html>

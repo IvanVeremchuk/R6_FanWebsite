@@ -1,5 +1,9 @@
+
+
 body {
-    background-color: #EEEEEE
+    background-image: url("background1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
     font-family:Helvetica, Arial, sans-serif;
 }
 

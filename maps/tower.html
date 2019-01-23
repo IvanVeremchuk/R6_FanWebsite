@@ -1,9 +1,33 @@
 <html>
     <head>
-        <title>Map:Willa</title>
+        <title>Map:tower</title>
+        <link rel="stylesheet" type="text/css" href="style1.css" />
+		<script src="script.js"></script>
     </head>
     <body>
-        <img src="tower\tower1.jpg" alt="tower 1-st flor" style="height:700px;border:0;"/>
-        <img src="tower\tower2.jpg" alt="tower second flor" style="height:700px;border:0;"/>
-    </body>
+        <div class="row">
+            <div class="column">
+                <img src="tower/tower1.jpg" alt="tower 1-st flor"  onclick="myFunction(this);"/>
+            </div>
+            <div class="column">
+                <img src="tower/tower2.jpg" alt="tower second flor"  onclick="myFunction(this);"/>
+            </div>
+            <div class="column">
+                <img src="tower/tower3.jpg" alt="tower third flor"  onclick="myFunction(this);"/>
+            </div>
+            <div class="column">
+                <img src="tower/tower4.jpg" alt="tower 4-th flor"  onclick="myFunction(this);"/>
+            </div>
+        </div>
+        <div class="container" style="height: 50%">
+            <!-- Close the image -->
+            <span onclick="this.parentElement.style.display='none'" class="closebtn" style="width: 41%">&times;</span>
+
+            <!-- Expanded image -->
+            <img id="expandedImg"  style="width: 60%">
+
+            <!-- Image text -->
+            <div id="imgtext"  style="height: 83%"></div>
+        </div>
+</body>
 </html>

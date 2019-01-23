@@ -1,10 +1,32 @@
 <html>
     <head>
         <title>Map:Willa</title>
+        <link rel="stylesheet" type="text/css" href="style1.css" />
+		<script src="script.js"></script>
     </head>
     <body>
-        <img src="fortress/fortress1.jpg" alt="rortress 1-st flor" style="height:600px;border:0;"/>
-        <img src="fortress/fortress2.jpg" alt="rortress second flor" style="height:600px;border:0;"/>
-        <img src="fortress/fortress3.jpg" alt="rortress third flor" style="height:600px;border:0;"/>
+        <div id="main">
+			<div class="row">
+	            <div class="column">
+	                <img src="fortress/fortress1.jpg" alt="fortress 1-st flor"  onclick="myFunction(this);"/>
+	            </div>
+	            <div class="column">
+	                <img src="fortress/fortress2.jpg" alt="fortress second flor"  onclick="myFunction(this);"/>
+	            </div>
+	            <div class="column">
+	                <img src="fortress/fortress3.jpg" alt="fortress third flor"  onclick="myFunction(this);"/>
+	            </div>
+	        </div>
+	        <div class="container" style="height: 50%">
+	            <!-- Close the image -->
+	            <span onclick="this.parentElement.style.display='none'" class="closebtn" style="width: 41%">&times;</span>
+
+	            <!-- Expanded image -->
+	            <img id="expandedImg" style="width: 60%">
+
+	            <!-- Image text -->
+	            <div id="imgtext" style="height: 83%"></div>
+	        </div>
+	    </div>
     </body>
 </html>
