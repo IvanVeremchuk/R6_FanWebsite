@@ -1,37 +1,159 @@
-﻿<html>
-    <head>
-		<title>R6 Maps</title>
-		<link rel="stylesheet" type="text/css" href="style.css" />
-        <meta name="description" contient="Rainbow Six: Siege Maps"/>
-        <meta name="keywords" content="rainbow six siage maps, siege maps"/>
-        <meta name="author" content="Ivan Veremchuk"/>
-    </head>
-    <body>
-		<div id="container">
-			<div id="header">
-				<h1>Maps</h1>
-			</div>
-			<div id="content">
-			    <a href="maps/kanal.html"><img src="maps/kanal/kanal0.jpg">Kanal</a><br />
-			    <a href="maps/favela.html"><img src="maps/favela/favela0.jpg">favela</a><br />
-			    <a href="maps/tower.html"><img src="maps/tower/tower0.jpg">Tower</a><br />
-			    <a href="maps/hereford.html"><img src="maps/hereford/hereford0.jpg">Hereford</a><br />
-			    <a href="maps/fortress.html"><img src="maps/fortress/fortress0.jpg">Fortrees</a><br />
-			    <a href="maps/border.html"><img src="maps/border/border0.jpg">Border</a><br />
-			    <a href="maps/consulate.html"><img src="maps/consulate/consulate0.jpg">consulate</a><br />
-			    <a href="maps/kafe.html"><img src="maps/kafe/kafe0.jpg">kafe</a><br />
-			    <a href="maps/oregon.html"><img src="maps/oregon/oregon0.jpg">oregon</a><br />
-			    <a href="maps/plane.html"><img src="maps/plane/plane0.jpg">plane</a><br />
-			    <a href="maps/skyscraper.html"><img src="maps/skyscraper/skyscraper0.jpg">skyscraper</a><br />
-			    <a href="maps/yacht.html"><img src="maps/yacht/yacht0.jpg">yacht</a><br />
-			    <a href="maps/chalet.html"><img src="maps/chalet/chalet0.jpg">chalet</a><br />
-			    <a href="maps/bank.html"><img src="maps/bank/bank0.jpg">Bank</a><br />
-			    <a href="maps/villa.html"><img src="maps/villa/villa0.jpg">Villa</a><br />
-			    <a href="maps/coastline.html"><img src="maps/coastline/coastline0.jpg">coastline</a><br />
-			    <a href="maps/themepark.html"><img src="maps/themepark/themepark0.jpg">themepark</a><br />	
-			    <a href="maps/house.html"><img src="maps/house/house0.jpg">house</a><br />
-			    <a href="maps/club.html"><img src="maps/club/club0.jpg">club</a><br />
-			</div>
-		</div>
-    </body>
+<?php
+  session_start()
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="rainbow six siage maps"/>
+  <meta name="author" content="Ivan Veremchuk"/>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+	background-image: url("background.jpg");
+
+	background-repeat:no-repeat;
+
+	background-size:cover;
+
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+
+.menu {
+  float:left;
+  width:120px;
+  text-align:center;
+}
+.menu a {
+  text-align: left;
+  background-color: #111;
+  color: #D3D3D3;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:120px;
+  border-radius: 5px;
+} 
+.resp-container {
+/*  float:left;*/
+  padding:14px 10px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6000px;
+    overflow:auto;
+    border: 0;
+}
+.about {
+  float:left;
+  background-color: #111;
+  color: #D3D3D3;
+  width:100%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+.link { 
+	color: white; 
+}
+
+
+.link:hover { 
+	color: grey; 
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .resp-container, .about {
+    width:100%;
+  }
+  .about {
+    display:  none;
+  }
+}
+  
+/* Dropdown Menu inside a Navigation Bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:#111111;
+  color: #e0e0e0;
+}
+
+.container {
+  padding: 16px;
+}
+
+</style>
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+<div style="overflow:auto; ">
+  <div class="menu">
+	<ul>
+	    <li id="nav_home"><a href="maps/outback.html" target="myiframe">Outback</a></li>
+	    <li id="nav_home"><a href="maps/fortress.html" target="myiframe">Fortrees</a></li>
+	    <li id="nav_home"><a href="maps/hereford.html" target="myiframe">Hereford</a></li>
+	    <li id="nav_home"><a href="maps/villa.html" target="myiframe">Villa</a></li>
+	    <li id="nav_home"><a href="maps/tower.html" target="myiframe">Tower</a></li>
+	    <li id="nav_home"><a href="maps/themepark.html" target="myiframe">Themepark</a> </li>
+	    <li id="nav_home"><a href="maps/coastline.html" target="myiframe">Coastline</a></li>
+	    <li id="nav_home"><a href="maps/skyscraper.html" target="myiframe">Skyscraper</a></li>
+	    <li id="nav_home"><a href="maps/favela.html" target="myiframe">Favela</a></li>
+	    <li id="nav_home"><a href="maps/border.html" target="myiframe">Border</a></li>
+	    <li id="nav_home"><a href="maps/yacht.html" target="myiframe">Yacht</a></li>
+	    <li id="nav_home"><a href="maps/bank.html" target="myiframe">Bank</a> </li>
+	    <li id="nav_home"><a href="maps/club.html" target="myiframe">Club</a></li>
+	    <li id="nav_home"><a href="maps/chalet.html" target="myiframe">Chalet</a></li>
+	    <li id="nav_home"><a href="maps/consulate.html" target="myiframe">Consulate</a></li>
+	    <li id="nav_home"><a href="maps/oregon.html" target="myiframe">Oregon</a></li>
+	    <li id="nav_home"><a href="maps/kafe.html" target="myiframe">Kafe</a></li>
+	    <li id="nav_home"><a href="maps/kanal.html" target="myiframe">Kanal</a></li>
+	    <li id="nav_home"><a href="maps/plane.html" target="myiframe">Plane</a></li>
+	    <li id="nav_home"><a href="maps/house.html" target="myiframe">House</a></li>
+	</ul>
+  </div>
+
+  <div class="resp-container">
+    <iframe name="myiframe" class="resp-iframe" src="" gesture="media"allowfullscreen></iframe>
+  </div>
+
+  <div class="about">
+    <h2>About</h2>
+    <p>lifecell.tk is designed to help players learn Rainbow Six Siege maps.  It can be used as a reference tool on a second device while playing, or even in the UPlay or Steam overlay browsers on PCs. You can also fork and contribute to this site <a class="link" href="https://github.com/IvanVeremchuk/R6_FanWebsite" target="myiframe">through GitHub.</a></p>
+    <p>© copyright lifecell.tk</p>
+  </div>
+</div>
+
+</body>
 </html>

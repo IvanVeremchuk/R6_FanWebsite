@@ -1,33 +1,27 @@
 <html>
     <head>
-        <title>Map:Chalet</title>
+        <title>Map:chalet</title>
         <link rel="stylesheet" type="text/css" href="style1.css" />
-		<script src="script.js"></script>
+        <script src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="row">
-            <div class="column">
-                <img src="chALET/chALET1.jpg" alt="chALET 1-st flor"  onclick="myFunction(this);"/>
-            </div>
-            <div class="column">
-                <img src="chALET/chALET2.jpg" alt="chALET second flor"  onclick="myFunction(this);"/>
-            </div>
-            <div class="column">
-                <img src="chALET/chALET3.jpg" alt="chALET third flor"  onclick="myFunction(this);"/>
-            </div>
-            <div class="column">
-                <img src="chALET/chALET4.jpg" alt="chALET 4-th flor"  onclick="myFunction(this);"/>
+            <div class="col-3 col-s-12 menu">
+                <img src="chalet/chalet1.jpg" alt="chalet 1-st flor"  onclick="myFunction(this);"/>
+                <img src="chalet/chalet2.jpg" alt="chalet second flor"  onclick="myFunction(this);"/>
+                <img src="chalet/chalet3.jpg" alt="chalet third flor"  onclick="myFunction(this);"/>
+                <img src="chalet/chalet4.jpg" alt="chalet 4-th flor"  onclick="myFunction(this);"/>
             </div>
         </div>
-        <div class="container" style="height: 50%">
-            <!-- Close the image -->
-            <span onclick="this.parentElement.style.display='none'" class="closebtn" style="width: 41%">&times;</span>
+        <div class="col-9 col-s-12">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
-            <!-- Expanded image -->
-            <img id="expandedImg"  style="width: 60%">
+                <!-- Expanded image -->
+                <img id="expandedImg">
 
-            <!-- Image text -->
-            <div id="imgtext"  style="height: 83%"></div>
+                <!-- Image text -->
+                <div id="imgtext"></div>
         </div>
-</body>
+    </body>
 </html>

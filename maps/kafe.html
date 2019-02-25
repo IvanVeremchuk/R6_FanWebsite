@@ -1,33 +1,27 @@
 <html>
     <head>
-        <title>Map:kafe</title>
+        <title>Map:Kafe</title>
         <link rel="stylesheet" type="text/css" href="style1.css" />
-		<script src="script.js"></script>
+        <script src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="row">
-            <div class="column">
+            <div class="col-3 col-s-12 menu">
                 <img src="kafe/kafe1.jpg" alt="kafe 1-st flor"  onclick="myFunction(this);"/>
-            </div>
-            <div class="column">
                 <img src="kafe/kafe2.jpg" alt="kafe second flor"  onclick="myFunction(this);"/>
-            </div>
-            <div class="column">
                 <img src="kafe/kafe3.jpg" alt="kafe third flor"  onclick="myFunction(this);"/>
-            </div>
-            <div class="column">
                 <img src="kafe/kafe4.jpg" alt="kafe 4-th flor"  onclick="myFunction(this);"/>
             </div>
         </div>
-        <div class="container" style="height: 50%">
-            <!-- Close the image -->
-            <span onclick="this.parentElement.style.display='none'" class="closebtn" style="width: 41%">&times;</span>
+        <div class="col-9 col-s-12">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
-            <!-- Expanded image -->
-            <img id="expandedImg"  style="width: 60%">
+                <!-- Expanded image -->
+                <img id="expandedImg">
 
-            <!-- Image text -->
-            <div id="imgtext"  style="height: 83%"></div>
+                <!-- Image text -->
+                <div id="imgtext"></div>
         </div>
-</body>
+    </body>
 </html>

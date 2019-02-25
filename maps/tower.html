@@ -2,32 +2,26 @@
     <head>
         <title>Map:tower</title>
         <link rel="stylesheet" type="text/css" href="style1.css" />
-		<script src="script.js"></script>
+        <script src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="row">
-            <div class="column">
+            <div class="col-3 col-s-12 menu">
                 <img src="tower/tower1.jpg" alt="tower 1-st flor"  onclick="myFunction(this);"/>
-            </div>
-            <div class="column">
                 <img src="tower/tower2.jpg" alt="tower second flor"  onclick="myFunction(this);"/>
-            </div>
-            <div class="column">
                 <img src="tower/tower3.jpg" alt="tower third flor"  onclick="myFunction(this);"/>
-            </div>
-            <div class="column">
                 <img src="tower/tower4.jpg" alt="tower 4-th flor"  onclick="myFunction(this);"/>
             </div>
         </div>
-        <div class="container" style="height: 50%">
-            <!-- Close the image -->
-            <span onclick="this.parentElement.style.display='none'" class="closebtn" style="width: 41%">&times;</span>
+        <div class="col-9 col-s-12">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
-            <!-- Expanded image -->
-            <img id="expandedImg"  style="width: 60%">
+                <!-- Expanded image -->
+                <img id="expandedImg">
 
-            <!-- Image text -->
-            <div id="imgtext"  style="height: 83%"></div>
+                <!-- Image text -->
+                <div id="imgtext"></div>
         </div>
-</body>
+    </body>
 </html>
